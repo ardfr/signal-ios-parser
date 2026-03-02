@@ -20,6 +20,23 @@ This tool decrypts the Signal iOS database using a valid 96-character SQLCipher 
 - Produces `attachment_decryption_log.csv`
 
 ---
+## Requirements
+For EXE Version
+
+Windows 10 or later
+
+signal_ios_parser.exe
+
+sqlcipher.exe (bundled in EXE build)
+
+Valid 96-character hexadecimal SQLCipher key
+
+Extracted Signal.sqlite
+
+Extracted attachments_files folder (optional for attachment decryption)
+
+No Python installation is required when using the EXE build.
+
 
 ## Usage
 **signal_ios_parser.exe --db "<path_to_Signal.sqlite>" --key <96_hex_key> --out "<output_folder>"**
